@@ -3,3 +3,8 @@ if (loginSuccessful) {
 } else {
     logger.severe("User login failed for: " + username);
 }
+
+public String sanitizeUser(String username) {
+    return Pattern.matches("[A-Za-z0-9]+", username)
+            ? username: "unauthorized user";
+}
