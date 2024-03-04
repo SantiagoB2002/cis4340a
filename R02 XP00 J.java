@@ -1,6 +1,7 @@
 public void deleteFile() {
     File someFile = new File("someFileName.txt");
-    someFile.delete() ;
-
+    // Do something with someFile
+    if (!someFile.delete()) {
+        // Handle the case where to delete the file
+    }
 }
-
